@@ -15,10 +15,21 @@
   Варианты для обучения: a. дообучить модели и оценить время, б. сравнить с RES-NET
 5. ./Object_detection/
   a. PROTOTYPE_ML_RetinaNet.ipynb (неактуально) - комментарии для задачи OD на датасете COCO17 архитектуре Retina-NET на базе ResNet-50. Обучение занимает космос
-6 ./NLP/
-  а.
-  б.
-  в.
+6. ./docker/ - docker images, containes operations
+  a. docker_mnist - prepare number
+  b. hello_app - print 'hello'
+  c. prepare_image - prepare images
+  d. print_numbers - print sum of two numbers
+7. ./tf_serving/ - hh data processing
+  a. tf_serving_hh_custom.ipynb - развертывание модели с использованием кастомной сигнатуры
+  b. tf_serving_hh_custom_2versions.ipynb - то же с использованием двух моделей
 7. ./Treacking/YOLO_humans.ipynb (неактуально) - текинг людей на базе YOLOv4. В блокноте проблема с путями
 8. Задачник_Генетические_алгоритмы.ipynb - на этом можно большую часть тестовых заданий для тинькофф стажировки сделать. Дополняется
 9. Кластеризация, задачник.ipynb - задачи кластеризации, ничего интересного. Стек: sklearn
+10 ./NLP/
+  а.
+  б.
+  в.
+11. ./pytorch-tensorflow_tests/
+  a. pytorch-tensorflow.ipynb - gpu test on local machine
+
