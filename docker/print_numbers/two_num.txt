@@ -1,0 +1,8 @@
+запускает приложене в интерактивном режиме 
+docker build -t sum_num .
+
+docker run -t --name sm sum_num
+
+docker exec sm python two_num.py 15 58
+
+

@@ -1,0 +1,21 @@
+docker ps -a
+docker cp
+docker rm CONTAINER
+docker rmi IMAGE_ID
+docker build -t png2npy_image .
+docker run -it --name png2npy-container png2npy_image
+docker rm png2npy-container
+docker exec png2npy-container python prepare_image.py 1.png
+docker exec png2npy-container python prepare_image.py /home/nikmih/Jupyter_projects/docker_script/prepare_image/1.png
+/home/nikmih/Jupyter_projects/docker_script/prepare_image/1.png
+ => => naming to docker.io/library/png2npy_image
+
+
+docker rm
+
+docker cp /home/nikmih/Jupyter_projects/docker_script/prepare_image/1.png png2npy-container:/1.png
+docker exec png2npy-container python prepare_image.py 1.png
+docker exec png2npy-container ls
+
+docker cp png2npy-container:/prepared_image.npy /home/nikmih/Jupyter_projects/docker_script/prepare_image/prepared_image.npy
+
